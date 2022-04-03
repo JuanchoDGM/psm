@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carreras - PSM Cabimas</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="miniBanner">
+		<span id="fecha"></span>
+		<script>
+			let date = new Date();
+			let year = date.getFullYear();
+			let mes = date.getMonth();
+			let dia = date.getDate();
+			let semana = date.getDay();
+			let meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+			let diasSemana = ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"]
+			document.getElementById("fecha").innerHTML = `${diasSemana[semana]}, ${dia} de ${meses[mes]} del ${year}`;
+		</script>
+		<div id="divMiniBanner">
+			<a class="miniBannerItem" href="#">PSM en Línea</a> | 
+			<a class="miniBannerItem" href="#">Correo Institucional</a>
+		</div>
+	</div>
+
+	<header>
+		<a href="#"><img id="bannerPsm" src="logos/banner-psm.png" alt="Banner-PSM"></a>
+		<h4 id="rif">J-08034166-0</h4>
+	</header>
+
+	<nav>
+		<ul>
+			<a href="#">
+				<li>Nosotros</li>
+			</a>
+
+			<a href="#">
+				<li>Carreras</li>
+			</a>
+
+			<a href="#">
+				<li>Cursos - Diplomados</li>
+			</a>
+
+			<a href="#">
+				<li>Procesos Institucionales</li>
+			</a>
+
+			<a href="#">
+				<li>Consulta tus Notas</li>
+			</a>
+		</ul>
+	</nav>
+
+	<h1>Carreras Ofrecidas por la Institución</h1>
+
+	<div id="carreras">
+		<div class="carrera">
+			<img class="imagen" src="logos/arquitectura-logo.png">
+			<h3 class="nombre">Arquitectura</h3>
+			<p class="descripcion">El Arquitecto trabaja en el ordenamiento del espacio natural y cultural que el hombre necesita para su desarrollo. <br> <a href="#">Más Información [+]</a></p>
+		</div>
+		<div class="carrera">
+			<img class="imagen" src="logos/industrial-logo.png">
+			<h3 class="nombre">Ingeniería Industrial</h3>
+			<p class="descripcion">El Ingeniero Industrial planifica, estudia, dirige y controla el análisis de los diferentes métodos, procesos y sistemas de producción, mejora de productos acabados y disposición de fábricas. <br> <a href="#">Más Información [+]</a></p>
+		</div>
+		<div class="carrera">
+			<img class="imagen" src="logos/civil-logo.png">
+			<h3 class="nombre">Ingeniería Civil</h3>
+			<p class="descripcion">El Ingeniero Civil estudia, proyecta, organiza y coordina todos los trabajos relacionados con la construcción, estructuras, edificaciones, obras hidráulicas, vías de comunicación y sistemas de saneamiento ambiental. <br> <a href="#">Más Información [+]</a></p>
+		</div>
+		<div class="carrera">
+			<img class="imagen" src="logos/sistemas-logo.png">
+			<h3 class="nombre">Ingeniería de Sistemas</h3>
+			<p class="descripcion">El Ingeniero de Sistemas está capacitado para desarrollar habilidades y destrezas en el análisis, diagnóstico y diseño, implementando y desarrollando sistemas de información. <br> <a href="#">Más Información [+]</a></p>
+		</div>
+		<div class="carrera">
+			<img class="imagen" src="logos/electrica-logo.png">
+			<h3 class="nombre">Ingeniería Eléctrica</h3>
+			<p class="descripcion">El Ingeniero Eléctrico puede desempeñarse como consultor, proyectista, diseñador, ingeniero de planta, supervisor de obras y asesor. <br> <a href="#">Más Información [+]</a></p>
+		</div>
+		<div class="carrera"><img class="imagen" src="logos/diseño-industrial-logo.png">
+			<h3 class="nombre">Ingeniería en Diseño Industrial</h3>
+			<p class="descripcion">El Ingeniero en Diseño Industrial es capaz de crear, coordinar y controlar aplicaciones en el campo industrial y general, aplicando conocimientos teórico-práctico para mejorar el ambiente interno, su productividad y entorno. <br> <a href="#">Más Información [+]</a></p></div>
+		<div class="carrera">
+			<img class="imagen" src="logos/electronica-logo.png">
+			<h3 class="nombre">Ingeniería Electrónica</h3>
+			<p class="descripcion">El Ingeniero Electrónico diseña, programa y evalúa proyectos de sistemas, equipos electrónicos, sistemas digitales y de computación, así como también sistemas de comunicaciones, control de procesos de instrumentación, entre otros. <br> <a href="#">Más Información [+]</a></p>
+		</div>
+		<div class="carrera">
+			<img class="imagen" src="logos/quimica-logo.png">
+			<h3 class="nombre">Ingeniería Química</h3>
+			<p class="descripcion">El Ingeniero Químico aplica métodos científicos a la solución de los problemas que involucren los principios químicos, físicos y matemáticos junto a los principios de la economía y las relaciones humanas. <br> <a href="#">Más Información [+]</a></p>
+		</div>
+		<div class="carrera">
+			<img class="imagen" src="logos/mecanica-logo.png">
+			<h3 class="nombre">Ingeniería en Mantenimiento Mecánico</h3>
+			<p class="descripcion">El Ingeniero en Mantenimiento Mecánico orienta el diseño de proyectos, instalación, montaje y reparación de máquinas; planificación, programación y evaluación de mantenimientos de equipos. <br> <a href="#">Más Información [+]</a></p>
+		</div>
+		<div class="carrera">
+			<img class="imagen" src="logos/petroleo-logo.png">
+			<h3 class="nombre">Ingeniería en Petróleo</h3>
+			<p class="descripcion">El Ingeniero en Petróleo estudia las formaciones y yacimientos petrolíferos; coordina, supervisa, controla y evalúa proyectos vinculados a su área, aunado a la realidad Nacional e Internacional. <br> <a href="#">Más Información [+]</a></p>
+		</div>
+	</div> <br>
+
+	<footer>
+		<div id="copyright">
+			<img src="resources/copyright.png"><br>
+			<a href="#">© Copyright BSFI Quero 2021</a>
+		</div>
+		<div id="universidades">
+			<p>Complejo Educativo <br>
+			"Dr. Raúl Quero Silva"</p><br>
+			<img src="resources/uts.png" alt="UTS">
+			<img src="resources/uft.png" alt="UFT">
+			<img src="resources/codazzi.png" alt="Codazzi">
+		</div>
+		<div id="contacto">
+			<img src="resources/contacto.png"><br>
+			<p>Calle Cumaná con Av. Carabobo, Urb Miraflores. <br>
+			contacto@psmcabimas.edu.ve | +58 264-3718351</p>
+			<div id="redes">
+				<img src="https://www.lasbrisashotels.com.mx/wp-content/uploads/2021/08/facebook-logo.png">
+				<img src="https://www.pngplay.com/wp-content/uploads/12/Instagram-Logo-Background-PNG.png">
+				<img src="http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c545.png">
+				<img src="https://icon-library.com/images/whatsapp-png-icon/whatsapp-png-icon-9.jpg">
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

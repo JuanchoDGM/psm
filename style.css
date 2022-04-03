@@ -1,0 +1,174 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Asap', sans-serif;
+}
+
+body{
+	background: white;
+}
+
+/********************************************* HEADER ***************************************************/
+
+.miniBannerItem{
+	color: #cfcfcf;
+	text-decoration: none;
+	border-bottom: 2px solid #cfcfcf;
+}
+
+#divMiniBanner{
+	color: #cfcfcf;
+	display: flex;
+	width: 250px;
+	justify-content: space-around;
+}
+
+#miniBanner {
+	padding: 3px;
+	background: #505050;
+	display: flex;
+	justify-content: space-around;
+}
+
+#fecha{
+	color: #cfcfcf;
+}
+
+header{
+	background: white;
+	height: 100px;
+	display: flex;
+	padding: 10px;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+#rif{
+	color: #3681bc;
+}
+
+#bannerPsm{
+	height: 70px;
+}
+
+/************************************************ FIN HEADER **********************************************/
+
+/*************************************************** NAV **************************************************/
+
+nav{
+	background: #c7d2e2;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul a {
+	list-style-type: none;
+	text-decoration: none;
+	color: black;
+	padding: 20px;
+	width: 60%;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+
+nav ul a:hover{
+	background: #3681bc;
+}
+
+/************************************************ FIN NAV *************************************************/
+
+h1 {
+	color: #f06b05;
+	padding: 50px 200px;
+}
+
+#carreras{
+	display: grid;
+	padding: 20px 15%;
+	grid-column: 40% 40%;
+	grid-row: 20% 20% 20% 20% 20%;
+	grid-template-areas: "1 2"
+						 "3 4"
+						 "5 6"
+						 "7 8"
+						 "9 0";
+	grid-gap: 20px;
+}
+
+.carrera{
+	display: grid;
+	align-items: center;
+	grid-column: 50% 50%;
+	grid-row: 50% 50%;
+	grid-template-areas: "imagen nombre"
+						 "imagen descripcion";
+	margin: 20px;
+	grid-column-gap: 20px;
+	grid-row-gap: 10px;
+}
+
+.carrera p a{
+	text-decoration: none;
+	color: #3681bc;
+}
+
+.carrera p a:hover{
+	text-decoration: none;
+	color: #3681bc;
+	border-bottom: 2px solid #3681bc;
+}
+
+.imagen{
+	width: 90px;
+	grid-area: imagen;
+}
+
+.nombre{
+	grid-area: nombre;
+}
+
+.descripcion{
+	grid-area: descripcion;
+}
+
+/********************************************* FOOTER *****************************************************/
+
+footer{
+	padding: 30px;
+	background: #143a85;
+	display: flex;
+	justify-content: space-around;
+	color: white;
+	align-items: center;
+}
+
+#copyright img{
+	width: 170px;
+}
+
+#copyright a{
+	text-decoration: none;
+	border-bottom: 2px solid white;
+	color: white;
+}
+
+#universidades{
+	text-align: center;
+}
+
+#contacto p{
+	margin: 15px 0px;
+}
+
+#redes{
+	display: flex;
+	gap: flex-gap;
+}
+
+#redes img{
+	width: 30px;
+	margin: 10px;
+}
