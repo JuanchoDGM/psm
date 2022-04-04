@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap" rel="stylesheet">
+	<title>Arquitectura - PSM Cabimas</title>
+</head>
+<body>
+	<div id="miniBanner">
+		<span id="fecha"></span>
+		<script>
+			let date = new Date();
+			let year = date.getFullYear();
+			let mes = date.getMonth();
+			let dia = date.getDate();
+			let semana = date.getDay();
+			let meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+			let diasSemana = ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"]
+			document.getElementById("fecha").innerHTML = `${diasSemana[semana]}, ${dia} de ${meses[mes]} del ${year}`;
+		</script>
+		<div id="divMiniBanner">
+			<a class="miniBannerItem" href="#">PSM en Línea</a> | 
+			<a class="miniBannerItem" href="#">Correo Institucional</a>
+		</div>
+	</div>
+
+	<header>
+		<a href="index.html"><img id="bannerPsm" src="./logos/banner-psm.png" alt="Banner-PSM"></a>
+		<h4 id="rif">J-08034166-0</h4>
+	</header>
+
+	<nav>
+		<ul>
+			<a href="#">
+				<li>Nosotros</li>
+			</a>
+
+			<a href="carreras.html">
+				<li>Carreras</li>
+			</a>
+
+			<a href="#">
+				<li>Cursos - Diplomados</li>
+			</a>
+
+			<a href="#">
+				<li>Procesos Institucionales</li>
+			</a>
+
+			<a href="#">
+				<li>Consulta tus Notas</li>
+			</a>
+		</ul>
+	</nav>
+
+	<div class="divCarreras">
+		<div class="tituloDescripCarreras">
+			<img src="logos/arquitectura-logo.png">
+			<h2>Arquitectura</h2>
+		</div>
+		<div class="descripCarreras">
+			<p>La función básica del arquitecto es la creación de espacios que den respuestas a las necesidades del hombre y su entorno, partiendo tanto de condiciones de índole cultural como físicas, contribuyendo a elevar su calidad de vida. La Carrera de Arquitecto busca formar hombres capacitados para coadyuvar a la solución de los espacios habitables del hombre, mediante la adecuada solución de los problemas espaciales y la selección de los materiales adecuados al medio ambiente en el cual se desarrolla. Su vocación lo obliga a crear espacios amables y agradables a los sentidos, que van desde la pequeña casa de habitación hasta el proyecto y edificación de ciudades completas. <br> <br>
+
+			Un Arquitecto está capacitado para diseñar, proyectar y ejecutar la construcción de edificios, conjunto de edificios y los espacios y paisajes que ellos conforman, con su equipamiento, infraestructura y otras destinadas al hábitat humano en sus diferentes escalas y complejidades. Asimismo investiga y propone obras de recuperación, renovación, rehabilitación y refuncionalización de edificios y de otros espacios. Sus capacidades e incumbencias profesionales lo habilitan también para efectuar la planificación arquitectónica y urbanística, en todas sus etapas y escalas, de los espacios destinados a los asentamientos urbanos. <br><br>
+
+			<b>Perfil del Egresado:</b> El Arquitecto egresado del PSM se ocupa de organizar espacios habitacionales en función del hombre, a través de estudios y proyectos de edificación, coordinando sus diversas etapas de planificación, diseño y construcción. Orienta y coordina las funciones de los trabajadores a sus órdenes. Analiza los proyectos para determinar los estilos y tipos de construcción. Hace estudios urbanísticos de distintas zonas. <br><br>
+
+			<b>Campo Laboral:</b> El egresado del PSM como Arquitecto, es un profesional que se desenvuelve en el campo interdisciplinario de la tecnología, la cultura, lo estético y lo histórico social, de allí que su acción cubrirá actividades de: Planificación, Diseño, Producción, Promoción de Proyectos Arquitectónicos, Investigación y Difusión de programas de interés cultural y educativo, tanto individual como colectivo. El profesional de la arquitectura actúa bajo las relaciones de dependencia y las de libre ejercicio de la profesión. <br><br> <a target="__blank" class="pensum" href="https://drive.google.com/file/d/1nALmapJmrJpE4cqlvvWxyxMJsKjJHr_B/view"><img src="./resources/pdficon.png" alt="pdficon"> Pensum de estudio</a> </p>
+		</div>
+	</div>
+
+	<footer>
+		<div id="copyright">
+			<img src="./resources/copyright.png"><br>
+			<a href="#">© Copyright BSFI Quero 2021</a>
+		</div>
+		<div id="universidades">
+			<p>Complejo Educativo <br>
+			"Dr. Raúl Quero Silva"</p><br>
+			<img src="./resources/uts.png" alt="UTS">
+			<img src="./resources/uft.png" alt="UFT">
+			<img src="./resources/codazzi.png" alt="Codazzi">
+		</div>
+		<div id="contacto">
+			<img src="./resources/contacto.png"><br>
+			<p>Calle Cumaná con Av. Carabobo, Urb Miraflores. <br>
+			contacto@psmcabimas.edu.ve | +58 264-3718351</p>
+			<div id="redes">
+				<a href="#"><img src="./resources/facebook-logo.png"></a>
+				<a href="#"><img src="./resources/instagram-logo.png"></a>
+				<a href="#"><img src="./resources/youtube-logo.png"></a>
+				<a href="#"><img src="./resources/email-logo.png"></a>
+				<a href="#">Más información</a>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>
