@@ -1,0 +1,82 @@
+
+#tituloCarreras{
+	color: #f06b05;
+	margin: 30px;
+}
+
+#carreras{
+	display: grid;
+	grid-column: 40% 40%;
+	grid-row: 20% 20% 20% 20% 20%;
+	grid-template-areas: "1";
+	grid-gap: 20px;
+	margin: 40px;
+}
+
+.carrera{
+	display: grid;
+	align-items: center;
+	grid-template-areas: "imagen nombre"
+						 "imagen descripcion";
+	margin: 20px;
+	grid-column-gap: 20px;
+	grid-row-gap: 10px;
+}
+
+.carrera p a{
+	text-decoration: none;
+	color: #3681bc;
+}
+
+.carrera p a:hover{
+	text-decoration: none;
+	color: #3681bc;
+	border-bottom: 2px solid #3681bc;
+}
+
+.imagen{
+	width: 90px;
+	grid-area: imagen;
+}
+
+.nombre{
+	grid-area: nombre;
+	color: #143a85;
+}
+
+.descripcion{
+	grid-area: descripcion;
+	text-align: justify;
+}
+
+.tituloDescripCarreras{
+	display: flex;
+	align-items: center;
+}
+
+.tituloDescripCarreras img{
+	width: 90px;
+	margin: 10px 20px;
+}
+
+.tituloDescripCarreras h2{
+	color: #f06b05;
+	font-weight: lighter;
+}
+
+.divCarreras{
+	margin: 40px;
+}
+
+.pensum {
+	text-decoration: none;
+	color: #143a85;
+	font-weight: bold;
+	border-bottom: 2px solid #143a85;
+}
+
+@media only screen and (min-width: 900px){
+	#carreras{
+		grid-template-areas: "1 2";
+	}
+}
