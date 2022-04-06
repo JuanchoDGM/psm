@@ -1,0 +1,26 @@
+article{
+	margin: 40px;
+	color: black;
+}
+
+.sedes a{
+	text-decoration: none;
+	color: black
+}
+
+.sedes a:hover{
+	text-decoration: underline;
+}
+
+@media only screen and (min-width: 900px){
+	article{
+		display: grid;
+		justify-content: space-around;
+		grid-template-rows: 20% 40%;
+		grid-template-areas: "1 2"
+	}
+
+	div{
+		padding: 0px 30px;
+	}
+}

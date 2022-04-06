@@ -86,4 +86,8 @@ label{
 	.imgIndex{
 		margin: 20px;
 	}
+
+	#ul-procesos{
+		margin: 0px 30px;
+	}
 }

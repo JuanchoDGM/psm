@@ -1,9 +1,4 @@
 
-#tituloCarreras{
-	color: #f06b05;
-	margin: 30px;
-}
-
 #carreras{
 	display: grid;
 	grid-column: 40% 40%;
