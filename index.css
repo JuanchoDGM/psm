@@ -1,5 +1,5 @@
 .contenedor{
-	margin: 10px 0px;
+	margin: 10px 30px;
 }
 
 label{
@@ -7,17 +7,31 @@ label{
 	padding: 5px;
 }
 
-#divIndex .imgIndex{
-	background-color: #c7d2e2;
-	padding: 5px 10px;
-	border: 2px solid #3681bc;
-	border-radius: 10px;
+.icoIndex{
+	width: 300px;
 }
 
-#divIndex .imgIndex:hover{
-	background: #3681bc;
-	border: 2px solid #143a85;
-	transition: all .4s ease;
+#icoIndex .icoIndex{
+	color: black;
+	background-color: #c7d2e2;
+	padding: 5px 10px;
+	border-bottom: 3px solid #c7d2e2;
+	/*border-radius: 10px;*/
+}
+
+#icoIndex .icoIndex:hover{
+	/*background: #3681bc;*/
+	color: #143a85;
+	border-bottom: 3px solid #143a85;
+	transition: all .5s ease;
+}
+
+#ul-index{
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin: 20px;
 }
 
 #ul-index a{
@@ -29,17 +43,27 @@ label{
 	text-decoration: underline;
 }
 
-#imgIndex{
+#icoIndex{
 	display: flex;
+	gap: 12px;
 	justify-content: space-around;
+	flex-direction: column;
 	margin: 30px 0px;
 	align-items: center;
 	text-align: center;
 }
 
-#imgIndex img{
-	width: 50px;
+.icoIndex i{
+	font-size: 30px;
 }
+
+#divIndex{
+	margin: 40px 0px;
+}
+
+/*#imgIndex img{
+	width: 50px;
+}*/
 
 #procesos{
 	text-align: center;
@@ -83,11 +107,33 @@ label{
 		justify-content: space-around;
 	}
 
-	.imgIndex{
+	#icoIndex{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.icoIndex{
 		margin: 20px;
+		width: 500px;
+		display: flex;
+		height: 70px;
+		text-decoration: none;
+		gap:20px;
+		align-items: center;
+	}
+
+	.icoIndex:hover{
+		/*background: #3681bc;*/
+		color: #143a85;
+		border-bottom: 3px solid #143a85;
+		transition: all .4s ease;
 	}
 
 	#ul-procesos{
 		margin: 0px 30px;
+	}
+
+	.icoIndex i{
+		font-size: 50px;
 	}
 }
