@@ -90,19 +90,24 @@ label{
 
 #ul-procesos{
 	display: grid;
-	grid-template-areas: "1 2";
 	text-align: center;
 	align-items: center;
 	padding: 0;
 	grid-gap: 10px;
-	padding: 10px;
+	padding: 20px;
+	margin: 20px;
+	background: #c7d2e2;
 }
 
 #ul-procesos a li{
 	padding: 10px;
-	border: 2px solid #143a85;
-	border-radius: 5px;
-	/*background: #3681bc;*/
+	border-bottom: 2px solid #c7d2e2;
+}
+
+#ul-procesos a li:hover{
+	color: #143a85;
+	border-bottom: 2px solid #143a85;
+	transition: all 0.5s ease;
 }
 
 #ul-procesos a{
@@ -145,7 +150,8 @@ label{
 	}
 
 	#ul-procesos{
-		margin: 0px 30px;
+		margin: 30px;
+		grid-template-areas: "1 2";
 	}
 
 	.icoIndex i{
